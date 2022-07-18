@@ -1,0 +1,30 @@
+.active-nav {
+  color: white;
+}
+
+.body {
+  background-color: rgb(88, 168, 95);
+}
+
+.footer,
+.header {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border-radius: 0 0 20px 20px;
+  justify-items: center;
+  align-items: center;
+}
+.footer {
+  border-radius: 20px 20px 0 0;
+}
+
+.footer,
+.header,
+.container {
+  width: 100%;
+}

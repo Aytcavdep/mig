@@ -106,7 +106,9 @@ section {
 }
 body {
   line-height: 1;
+  background-image: url(img/main.jpg);
   background-color: #8c8c8c;
+  font-family: Georgia, Serif;
 }
 ol,
 ul {
@@ -128,5 +130,15 @@ table {
   border-spacing: 0;
 }
 
+.App {
+  margin: auto;
+  width: 80%;
 
+  min-height: 100vh;
 
+  display: grid;
+  align-items: inherit;
+  justify-content: center;
+  grid-template-rows: 50px auto 50px;
+  background-color: rgba(255, 255, 255, 0.9);
+}
