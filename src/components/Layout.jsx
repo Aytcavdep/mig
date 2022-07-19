@@ -3,23 +3,23 @@ import React from "react";
 import Footer from "./Footer";
 import "./Layout.css";
 
-const setActive = ({ isActive }) => (isActive ? "active-nav" : "");
+const setActive = ({ isActive }) => (isActive ? "active-nav" : "nav");
 
 const Layout = () => {
   return (
     <>
       <header className="header">
         <NavLink to="/" className={setActive}>
-          Home
+          Главная
         </NavLink>
         <NavLink to="/services" className={setActive}>
-          Services
+          Услуги
         </NavLink>
         <NavLink to="/about" className={setActive}>
-          About
+          О нас
         </NavLink>
         <NavLink to="/contacts" className={setActive}>
-          Contacts
+          Контакты
         </NavLink>
       </header>
       <div className="container">

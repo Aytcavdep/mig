@@ -1,5 +1,8 @@
-.active-nav {
+.nav {
   color: white;
+}
+.active-nav {
+  color: rgb(167, 169, 252);
 }
 
 .body {
@@ -21,10 +24,4 @@
 }
 .footer {
   border-radius: 20px 20px 0 0;
-}
-
-.footer,
-.header,
-.container {
-  width: 100%;
 }
