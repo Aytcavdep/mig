@@ -9,18 +9,25 @@ const Layout = () => {
   return (
     <>
       <header className="header">
-        <NavLink to="/" className={setActive}>
-          Главная
-        </NavLink>
-        <NavLink to="/services" className={setActive}>
-          Услуги
-        </NavLink>
-        <NavLink to="/about" className={setActive}>
-          О нас
-        </NavLink>
-        <NavLink to="/contacts" className={setActive}>
-          Контакты
-        </NavLink>
+        <div className="contact">
+          <div>ООО "МИГ"</div>
+          <div>+7-909-200-99-99</div>
+        </div>
+        <div className="navmenu">
+          <NavLink to="/" className={setActive}>
+            Главная
+          </NavLink>
+          <NavLink to="/services" className={setActive}>
+            Услуги
+          </NavLink>
+          <NavLink to="/about" className={setActive}>
+            О нас
+          </NavLink>
+          <NavLink to="/contacts" className={setActive}>
+            Контакты
+          </NavLink>
+        </div>
+        <div className="joblist">ООО "МИГ"</div>
       </header>
       <div className="container">
         <Outlet />
