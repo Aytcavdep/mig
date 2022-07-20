@@ -22,7 +22,7 @@
     rgba(50, 50, 50, 1) 45%,
     rgba(255, 255, 255, 0.227328431372549) 100%
   );
-  
+
   color: #ff6000;
 }
 .contact {
@@ -68,7 +68,13 @@ CarouselImg {
     rgba(255, 255, 255, 0.227328431372549) 0%,
     rgba(50, 50, 50, 1) 45%,
     rgba(0, 0, 0, 0.7651435574229692) 100%
-    
-    
   );
+}
+
+.joblist {
+  background-image: url(img/main.jpg);
+}
+
+.joblist-services {
+  padding-top: 10px;
 }
