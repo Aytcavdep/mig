@@ -2,6 +2,7 @@ import { NavLink, Outlet } from "react-router-dom";
 import React from "react";
 import Footer from "./Footer";
 import "./Layout.css";
+import CarouselImg from "./Carousel";
 
 const setActive = ({ isActive }) => (isActive ? "active-nav" : "nav");
 
@@ -27,7 +28,8 @@ const Layout = () => {
             Контакты
           </NavLink>
         </div>
-        <div className="joblist">ООО "МИГ"</div>
+        <div className="joblist">Наши работы</div>
+        <CarouselImg ></CarouselImg>
       </header>
       <div className="container">
         <Outlet />
