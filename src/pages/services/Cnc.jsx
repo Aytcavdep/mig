@@ -1,9 +1,7 @@
-import React from 'react'
+import React from "react";
 
 const Cnc = () => {
-  return (
-    <div>Cnc</div>
-  )
-}
+  return <div>Изготовим детали на станке ЧПУ с высокой точностью</div>;
+};
 
-export default Cnc
+export default Cnc;

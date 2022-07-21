@@ -1,4 +1,11 @@
 import { NavLink, Outlet } from "react-router-dom";
+import {
+  ContactsTwoTone,
+  HomeTwoTone,
+  FlagTwoTone,
+  ToolTwoTone,
+  PhoneOutlined
+} from "@ant-design/icons";
 import React from "react";
 import Footer from "./Footer";
 import "./Layout.css";
@@ -12,24 +19,29 @@ const Layout = () => {
       <header className="header">
         <div className="contact">
           <div>ООО "МИГ"</div>
-          <div>+7-909-200-99-99</div>
+          <div>
+            <a className="phone" title="Набрать" href="tel:+79999999999">
+              <PhoneOutlined />
+              +7-999-999-99-99
+            </a>
+          </div>
         </div>
         <div className="navmenu">
           <NavLink to="/" className={setActive}>
-            Главная
+            <HomeTwoTone twoToneColor="#ff6000" /> Главная
           </NavLink>
           <NavLink to="/services" className={setActive}>
-            Услуги
+            <ToolTwoTone twoToneColor="#ff6000" /> Услуги
           </NavLink>
           <NavLink to="/about" className={setActive}>
-            О нас
+            <FlagTwoTone twoToneColor="#ff6000" /> О нас
           </NavLink>
           <NavLink to="/contacts" className={setActive}>
-            Контакты
+            <ContactsTwoTone twoToneColor="#ff6000" /> Контакты
           </NavLink>
         </div>
         <div className="joblist">Наши работы</div>
-        <CarouselImg ></CarouselImg>
+        <CarouselImg></CarouselImg>
       </header>
       <div className="container">
         <Outlet />

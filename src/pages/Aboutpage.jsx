@@ -1,10 +1,7 @@
-
-import React from 'react'
+import React from "react";
 
 const Aboutpage = () => {
-  return (
-    <div>Aboutpage</div>
-  )
-}
+  return <div>Раздел обновится в ближайшее время</div>;
+};
 
-export default Aboutpage
+export default Aboutpage;

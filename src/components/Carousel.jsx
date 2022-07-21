@@ -19,7 +19,7 @@ const CarouselImg = () => (
           <img align="left" src={item.img} alt={item.title} height="100px" />
         </Link>
         <div className="joblist-container">
-        <div className="joblist-services">{item.services}</div>
+          <div className="joblist-services">{item.services}</div>
         </div>
       </div>
     ))}

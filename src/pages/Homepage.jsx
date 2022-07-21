@@ -19,7 +19,7 @@ const Homepage = () => {
           src="https://yandex.ru/map-widget/v1/-/CCUNvHDnoD"
           height="450"
           width="100%"
-          frameborder="0"
+          frameBorder="0"
         ></iframe>
       </div>
     </div>

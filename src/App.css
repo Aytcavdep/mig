@@ -2,6 +2,13 @@
 v2.0 | 20110126
 License: none (public domain)
 */
+
+/*font-size: clamp(
+  var(--min-font-size) + 1px,
+  var(--fluid-size),
+  var(--max-font-size) + 1px 
+);
+
 html,
 body,
 div,
@@ -86,11 +93,15 @@ video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
+  font-size: clamp(
+    var(--min-font-size) + 1px,
+    var(--fluid-size),
+    var(--max-font-size) + 1px
+  );
   font: inherit;
   vertical-align: baseline;
 }
-/* HTML5 display-role reset for older browsers */
+/* HTML5 display-role reset for older browsers 
 article,
 aside,
 details,
@@ -103,12 +114,13 @@ menu,
 nav,
 section {
   display: block;
-}
+} */
 body {
   line-height: 1;
   background-image: url(img/main.jpg);
   background-color: #8c8c8c;
   font-family: Georgia, Serif;
+  font-size: 16px;
 }
 ol,
 ul {
@@ -132,7 +144,7 @@ table {
 
 .App {
   margin: auto;
-  width: 70%;
+  width: max(70%, 400px);
   min-height: 100vh;
   display: grid;
   align-items: inherit;
