@@ -3,13 +3,13 @@ import "antd/dist/antd.css";
 import React from "react";
 import { Link } from "react-router-dom";
 import { joblist } from "../pages/services/joblist";
-const contentStyle = {
+/*const contentStyle = {
   height: "100px",
   color: "#fff",
   lineHeight: "100px",
   textAlign: "left",
   background: "#000"
-};
+};*/
 
 const CarouselImg = () => (
   <Carousel autoplay>
@@ -18,7 +18,9 @@ const CarouselImg = () => (
         <Link to="/">
           <img align="left" src={item.img} alt={item.title} height="100px" />
         </Link>
+        <div className="joblist-container">
         <div className="joblist-services">{item.services}</div>
+        </div>
       </div>
     ))}
     {/*<div>
