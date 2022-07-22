@@ -144,14 +144,17 @@ table {
 
 .App {
   margin: auto;
-  width: max(70%, 400px);
+  width: min(100%, max(50%, 450px));
   min-height: 100vh;
   display: grid;
   align-items: inherit;
   justify-content: center;
-  grid-template-rows: 200px auto 80px;
+  /* grid-template-rows: 200px auto 80px; */
+  grid-template-rows: var(--header-size) auto var(--footer-size);
   grid-template-columns: 100%;
   background-color: rgba(255, 255, 255, 0.9);
+  font-size: var(--normal-font-size);
+  
 }
 #root {
   background-color: rgba(160, 160, 160, 0.4);

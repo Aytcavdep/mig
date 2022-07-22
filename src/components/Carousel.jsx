@@ -11,12 +11,13 @@ import { joblist } from "../pages/services/joblist";
   background: "#000"
 };*/
 
+
 const CarouselImg = () => (
   <Carousel autoplay>
     {joblist.map((item) => (
       <div className="joblist" key={item.id}>
         <Link to="/">
-          <img align="left" src={item.img} alt={item.title} height="100px" />
+          <img align="left" src={item.img} alt={item.title}/>
         </Link>
         <div className="joblist-container">
           <div className="joblist-services">{item.services}</div>
