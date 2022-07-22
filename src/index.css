@@ -105,21 +105,29 @@ nav,
 section {
   display: block;
 }
-:root {
-  --base-scale:calc(100vw / 80);
-  --h2-font-size:max(1em, min(4em, calc(var(--base-scale) * 4)));
-  --normal-font-size:max(0.8em, min(1.8em, calc(var(--base-scale) * 1)));
-  --padding-size:max(0.5em, min(1em, calc(var(--base-scale) * 2)));
+/*:root {
+  --base-scale:calc(100vw / 90);
+  --h2-font-size:max(1.5em, min(1.7em, calc(var(--base-scale) * 1.7)));
+  --normal-font-size:max(0.8em, min(1.8em, calc(var(--base-scale) * 1.8)));
+  --padding-size:max(0.5em, min(1em, calc(var(--base-scale) * 1)));
   --margin-size:max(0.5em, min(2em, calc(var(--base-scale) * 1)));
-  --header-size:max(15.5em, min(14em, calc(var(--base-scale) * 10)));
-  --footer-size:max(5em, min(2em, calc(var(--base-scale) * 5)));
-  --carousel-size:max(6em, min(13em, calc(var(--base-scale) * 7)));
+  --header-size:max(18em, min(19em, calc(var(--base-scale) * 19)));
+  --footer-size:max(5em, min(2em, calc(var(--base-scale) * 2)));
+  --carousel-size:max(6em, min(10em, calc(var(--base-scale) * 10)));
   --border-radius:max(1em, min(3em, calc(var(--base-scale) * 3)));
+}*/
+:root {
+  --base-scale: calc(100vw / 70);
+  --h2-font-size: max(1em, min(1.2em, calc(var(--base-scale) * 1.2)));
+
+  --padding-size: max(0.5em, min(1em, calc(var(--base-scale) * 1)));
+  --margin-size: max(0.5em, min(2em, calc(var(--base-scale) * 2)));
+  --border-radius: max(1em, min(3em, calc(var(--base-scale) * 3)));
 }
 body {
   line-height: 1;
   background-color: #8c8c8c;
-  font-size: var(--normal-font-size);
+  font-size: var(--h2-font-size);
 }
 ol,
 ul {
@@ -140,4 +148,3 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-

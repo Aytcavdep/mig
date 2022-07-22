@@ -1,11 +1,11 @@
 .nav {
-  color: #ff6000;
+  color: #fff;
   line-height: 1;
   text-decoration: none;
   cursor: pointer;
 }
 .active-nav {
-  color: white;
+  color: #ff6000;
   text-decoration: none;
 }
 
@@ -23,14 +23,14 @@
     rgba(255, 255, 255, 0.227328431372549) 100%
   );
   /* font-size: 17px; */
-  font-size: var(--h1-font-size);
-  color: #ff6000;
+  font-size: var(--h2-font-size);
+  color: #fff;
 }
 
 .contact {
   display: grid;
   /* margin: 5px; */
-  margin: var(--margin-size);
+  margin: 0.5em;
   /* margin-bottom: 10px; */
   grid-template-columns: repeat(2, 1fr);
   justify-items: center;
@@ -40,9 +40,9 @@
 
 .navmenu {
   /* margin: 5px; */
-  margin: var(--margin-size);
+  margin: 0.5em;
   /* margin-top: 10px; */
-  margin-top: var(--margin-size);
+
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 
@@ -50,7 +50,7 @@
   align-items: center;
 }
 .nav:after {
-  background-color: white;
+  background-color: #8db8f8;
   display: block;
   content: "";
   height: 3px;
@@ -65,18 +65,18 @@
   width: 100%;
 }
 CarouselImg {
-  margin-bottom: 10px;
+  margin-bottom: 1em;
 }
 a > img {
   /* height: 100px; */
-  height: var(--carousel-size);
+  height: 8em;
 }
 
 .container {
   -webkit-box-shadow: 0px 0px 10px 2px rgba(34, 60, 80, 0.2) inset;
   -moz-box-shadow: 0px 0px 10px 2px rgba(34, 60, 80, 0.2) inset;
   box-shadow: 0px 0px 10px 2px rgba(34, 60, 80, 0.2) inset;
-  padding-top: var(--padding-size);
+  padding: 0.5em;
 }
 .footer {
   background: linear-gradient(
@@ -89,34 +89,33 @@ a > img {
 
 .footer-container {
   display: grid;
-  margin: 5px;
+  margin: 0.5em;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
 }
-.footer-contact {
+.footer-contact,
+.footer-address {
   /* margin-top: 25px; */
-  margin-top: var(--margin-size);
+  margin-top: 1em;
 }
 
 .footer-address {
-  /* margin-top: 25px; */
-  margin-top: var(--margin-size);
   text-align: right;
 }
 .address,
 .phone {
-  color: #ff6000;
+  color: #fff;
 }
 
 .joblist {
   text-align: center;
-  margin-bottom: 10px;
+  margin-bottom: 1em;
 }
 
 .joblist-container {
   background-image: url(/src/pages/services/img/cex.jpg);
   /* height: 100px; */
-  height: var(--carousel-size);
+  height: 8em;
   color: white;
   background-position: center;
   background-repeat: no-repeat;
@@ -124,8 +123,7 @@ a > img {
 }
 
 .joblist-services {
-  padding-top: 10px;
+  padding-top: 0.5em;
   background-color: rgba(160, 160, 160, 0.4);
-  height: 100px;
-  font-size: var(--normal-font-size);
+  height: 8em;
 }
