@@ -7,16 +7,28 @@ body {
 }
 .App {
   margin: auto;
-  width: min(100%, max(50%, 450px));
+  width: min(100%, max(70%, 450px));
   min-height: 100vh;
   display: grid;
   align-items: inherit;
   justify-content: center;
   /* grid-template-rows: 200px auto 80px; */
-  grid-template-rows: minmax(auto, min-content) auto 5em;
+  grid-template-rows: minmax(auto, min-content) auto 6em;
   grid-template-columns: 100%;
   background-color: rgba(255, 255, 255, 0.9);
 }
 #root {
   background-color: rgba(160, 160, 160, 0.4);
 }
+
+@media screen and (min-width: 321px) and (max-width: 480px)  {
+  .App {
+    width: 100%;
+  }
+}
+@media  (max-width: 330px) {
+  .navmenu {
+   font-size: 13px;
+  }
+   }
+  
