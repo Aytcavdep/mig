@@ -9,9 +9,9 @@ const Footer = () => {
         <div className="footer-contact">
           <div>ООО "МИГ"</div>
           <div>
-            <a className="phone" title="Набрать" href="tel:+79999999999">
+            <a className="phone" title="Набрать" href="tel:+79102274758">
               <PhoneOutlined />
-              +7-999-999-99-99
+              +7-910-227-47-58
             </a>
           </div>
         </div>
@@ -22,7 +22,7 @@ const Footer = () => {
             title="Перейти на карту"
           >
             <EnvironmentTwoTone />
-            с. Стрелецкое, пер. Королёва, 18A
+            с. Стрелецкое, пер. Королёва, 18В
           </a>
         </div>
       </div>

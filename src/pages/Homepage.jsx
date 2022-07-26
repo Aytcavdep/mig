@@ -1,6 +1,6 @@
 import React from "react";
 import { List } from "antd";
-import { ArrowRightOutlined } from "@ant-design/icons";
+import { RightCircleTwoTone, CompassTwoTone } from "@ant-design/icons";
 import "antd/dist/antd.css";
 import "./Homepage.css";
 
@@ -9,18 +9,18 @@ const data = [
     title: "Токарный станок",
     description:
       "обработка изделий максимальным диаметром 500 мм, длиной 1 500 мм",
-    img: require("./services/img/lathe.png"),
+    img: require("./services/img/lathe.png")
   },
   {
     title: "Фрезерный станок",
     description: "габариты рабочего поля 430 мм х 350 мм",
-    img: require("./services/img/lathe.png"),
+    img: require("./services/img/lathe.png")
   },
   {
     title: "Плоскошлифовальный  станок ",
     description: "габариты рабочего поля 300 мм х 800 мм",
-    img: require("./services/img/lathe.png"),
-  },
+    img: require("./services/img/lathe.png")
+  }
 ];
 
 const dataDetail = [
@@ -40,7 +40,7 @@ const dataDetail = [
   " Корпуса",
   " Отводы",
   " Анкера",
-  " Стаканы",
+  " Стаканы"
 ];
 
 const Homepage = () => {
@@ -48,7 +48,7 @@ const Homepage = () => {
     <div>
       <div className="homepage-title">
         <h1>
-          Компания ООО МИГ предлагает качественные услуги металлообработке в г.
+          Компания ООО МИГ предлагает качественные услуги металлообработки в г.
           Белгород на современных токарных и фрезерных станках с наличием ЧПУ.
           Большой парк оборудования позволяет нам изготовить всевозможные
           металлические изделия по Вашему заказу на основе индивидуальных
@@ -73,9 +73,9 @@ const Homepage = () => {
         <List
           size="small"
           header={
-            <div style={{textAlign: "center"}}>
+            <div style={{ textAlign: "center" }}>
               <strong>
-                Изготовление следующих изделий из металла с технической
+                ООО МИГ изготовит для Вас изделия из металла с технической
                 возможностью закалки, химического оксидирования, цинкования.
               </strong>
             </div>
@@ -84,17 +84,20 @@ const Homepage = () => {
           dataSource={dataDetail}
           renderItem={(item) => (
             <List.Item>
-              <ArrowRightOutlined />
+              <RightCircleTwoTone />
               {item}
             </List.Item>
           )}
         />
       </div>
       <div>
+        <p className="schema">
+          <CompassTwoTone /> Схема проезда
+        </p>
         <iframe
           title="Яндекс карта с маршрутом"
           src="https://yandex.ru/map-widget/v1/-/CCUNvHDnoD"
-          height="450"
+          height="350"
           width="100%"
           frameBorder="0"
         ></iframe>

@@ -69,7 +69,7 @@ CarouselImg {
 }
 a > img {
   /* height: 100px; */
-  height: 8em;
+  height: var(--carousel-size);
 }
 
 .container {
@@ -109,13 +109,12 @@ a > img {
 
 .joblist {
   text-align: center;
-  margin-bottom: 1em;
 }
 
 .joblist-container {
   background-image: url(/src/pages/services/img/cex.jpg);
   /* height: 100px; */
-  height: 8em;
+  height: var(--carousel-size);
   color: white;
   background-position: center;
   background-repeat: no-repeat;
@@ -125,5 +124,5 @@ a > img {
 .joblist-services {
   padding-top: 0.5em;
   background-color: rgba(160, 160, 160, 0.4);
-  height: 8em;
+  height: var(--carousel-size);
 }

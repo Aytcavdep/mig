@@ -20,9 +20,9 @@ const Layout = () => {
         <div className="contact">
           <div>ООО "МИГ"</div>
           <div>
-            <a className="phone" title="Набрать" href="tel:+79999999999">
+            <a className="phone" title="Набрать" href="tel:+79102274758">
               <PhoneOutlined />
-              +7-999-999-99-99
+              +7-910-227-47-58
             </a>
           </div>
         </div>
