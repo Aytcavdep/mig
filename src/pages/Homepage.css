@@ -1,0 +1,13 @@
+.homepage-title > h1 {
+    font-size: 1.1em;
+}
+
+.homepage-title > h2 {
+    text-align: center;
+    margin-top: 1.5em;
+}
+
+
+.ant-list-item-meta {
+    align-items: center;
+}
