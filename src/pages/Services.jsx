@@ -20,7 +20,7 @@ const Services = () => {
     cover={
       <img
         alt="cnc"
-        src={require("./services/img/shesterny.JPG")}
+        src={require("./services/img/hairpins-1.jpg")}
       />
     }
   >

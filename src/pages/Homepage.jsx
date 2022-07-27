@@ -6,18 +6,18 @@ import "./Homepage.css";
 
 const data = [
   {
-    title: "Токарный станок",
+    title: "Токарные работы ЧПУ",
     description:
-      "обработка изделий максимальным диаметром 500 мм, длиной 1 500 мм",
+      "max диаметр 500 РМЦ 1500",
     img: require("./services/img/lathe.png")
   },
   {
-    title: "Фрезерный станок",
-    description: "габариты рабочего поля 430 мм х 350 мм",
+    title: "Фрезерные работы с ЧПУ",
+    description: "max 430 мм х 350 мм",
     img: require("./services/img/lathe.png")
   },
   {
-    title: "Плоскошлифовальный  станок ",
+    title: "Шлифовальные работы",
     description: "габариты рабочего поля 300 мм х 800 мм",
     img: require("./services/img/lathe.png")
   }
@@ -55,7 +55,7 @@ const Homepage = () => {
           чертежей.
         </h1>
 
-        <h2>В распоряжении ООО МИГ следующие станочные единицы:</h2>
+        <h2>Компания ООО МИГ предлагает:</h2>
         <List
           itemLayout="horizontal"
           dataSource={data}

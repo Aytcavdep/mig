@@ -26,6 +26,16 @@ const Layout = () => {
             </a>
           </div>
         </div>
+        <div className="messager-container">
+        <div className="messager">
+        <a title="Отправить Email" href="mailto:admin@migbelg.ru?subject=Расчёт изготовления детали(from:migbelg.ru)"><img src={require("./img/email.webp")} alt="Email"/></a>
+        <a title="WhatsApp" href="whatsapp://send?phone=+79102274758"><img src={require("./img/whatsapp.png")} alt="WhatsApp"/></a>
+    <a title="Viber" href="viber://chat?number=%2B79102274758"><img src={require("./img/viber.png")} alt="Viber"/></a>
+    {/* <a title="Telegram" href="tg://resolve?domain=santech31"><img src="img/telegram.png" alt="Telegram"></a> */}
+    {/* <a title="instagram" href="http://instagram.com/_u/santech31/"><img src="img/instagram.png" alt="instagram"></a>
+    <a title="Vk" href="http://vk.com/santech31/"><img src="img/vk.png" alt="vkontakte"></a> */}
+        </div>
+        </div>
         <div className="navmenu">
           <NavLink to="/" className={setActive}>
             <HomeTwoTone twoToneColor="#ff6000" /> Главная

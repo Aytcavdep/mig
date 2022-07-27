@@ -1,11 +1,5 @@
 export const joblist = [
   {
-    id: 1,
-    img: require("./img/axis-1.jpg"),
-    title: "Вал",
-    services: ""
-  },
-  {
     id: 2,
     img: require("./img/body-1.jpg"),
     title: "?",

@@ -17,11 +17,13 @@ const CarouselImg = () => (
     {joblist.map((item) => (
       <div className="joblist" key={item.id}>
         <Link to="/">
-          <img align="left" src={item.img} alt={item.title}/>
+        <div className="img-container">
+          <img align="center" src={item.img} alt={item.title}/>
+          </div>
         </Link>
-        <div className="joblist-container">
+        {/* <div className="joblist-container">
           <div className="joblist-services">{item.services}</div>
-        </div>
+        </div> */}
       </div>
     ))}
     {/*<div>
