@@ -19,16 +19,16 @@ body {
 }
 #root {
   background-color: rgba(160, 160, 160, 0.4);
+  backdrop-filter: blur(5px);
 }
 
-@media screen and (min-width: 321px) and (max-width: 480px)  {
+@media screen and (min-width: 321px) and (max-width: 480px) {
   .App {
     width: 100%;
   }
 }
-@media  (max-width: 330px) {
+@media (max-width: 330px) {
   .navmenu {
-   font-size: 13px;
+    font-size: 13px;
   }
-   }
-  
+}

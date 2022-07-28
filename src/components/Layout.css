@@ -5,7 +5,7 @@
   cursor: pointer;
 }
 .active-nav {
-  color: #ff6000;
+  /*color: #ff6000;*/
   text-decoration: none;
 }
 
@@ -30,27 +30,29 @@
 .contact {
   display: grid;
   /* margin: 5px; */
-  margin: 0.5em;
+  margin: 0.5em 0;
+  padding-bottom: 4px;
   /* margin-bottom: 10px; */
   grid-template-columns: repeat(2, 1fr);
   justify-items: center;
   align-items: center;
   justify-content: space-between;
+  border-bottom: #ff6000 solid;
 }
 
 .navmenu {
-  /* margin: 5px; */
-  margin: 0.5em;
-  /* margin-top: 10px; */
-
+  margin: 0.5em 0;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-
   justify-items: center;
   align-items: center;
+  padding: 4px 0;
+  border-top: #ff6000 solid;
+  border-bottom: #ff6000 solid;
 }
+
 .nav:after {
-  background-color: #8db8f8;
+  background-color: #fff;
   display: block;
   content: "";
   height: 3px;
@@ -95,7 +97,7 @@ CarouselImg {
   justify-content: center;
 }
 
-.img-container > img {
+.ant-image-img {
   /* height: 100px; */
   height: var(--carousel-size);
 }
@@ -137,20 +139,4 @@ CarouselImg {
 
 .joblist {
   text-align: center;
-}
-
-.joblist-container {
-  background-image: url(/src/pages/services/img/cex.jpg);
-  /* height: 100px; */
-  height: var(--carousel-size);
-  color: white;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.joblist-services {
-  padding-top: 0.5em;
-  background-color: rgba(160, 160, 160, 0.4);
-  height: var(--carousel-size);
 }
