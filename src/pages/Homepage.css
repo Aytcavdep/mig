@@ -1,5 +1,8 @@
+.homepage-title {
+  font-size: var(--h2-font-size);
+}
+
 .homepage-title > h1 {
-  font-size: 1.1em;
   text-align: justify;
   font-style: normal;
 }
@@ -7,6 +10,11 @@
 .homepage-title > h2 {
   text-align: center;
   margin-top: var(--margin-size);
+}
+
+.ant-list-split .ant-list-header,
+.ant-list-bordered.ant-list-sm .ant-list-item {
+  font-size: var(--h2-font-size);
 }
 
 .ant-list-item-meta {

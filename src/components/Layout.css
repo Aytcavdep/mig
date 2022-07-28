@@ -40,6 +40,16 @@
   border-bottom: #ff6000 solid;
 }
 
+.company {
+  justify-self: flex-start;
+  margin-left: var(--margin-size);
+}
+
+div.phone {
+  justify-self: flex-end;
+  margin-right: var(--margin-size);
+}
+
 .navmenu {
   margin: 0.5em 0;
   display: grid;
