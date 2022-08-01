@@ -7,7 +7,13 @@ export const joblist = [
   },
   {
     id: 3,
-    img: require("./img/bushing.jpg"),
+    img: require("./img/bushing-1.jpg"),
+    title: "Втулка",
+    services: "-"
+  },
+  {
+    id: 33,
+    img: require("./img/bushing-2.jpg"),
     title: "Втулка",
     services: "-"
   },
@@ -61,13 +67,13 @@ export const joblist = [
   },
   {
     id: 12,
-    img: require("./img/shaft-1.jpeg"),
+    img: require("./img/shaft-1.jpg"),
     title: "Вал",
     services: "-"
   },
   {
     id: 13,
-    img: require("./img/shaft-2.jpeg"),
+    img: require("./img/shaft-2.jpg"),
     title: "Вал",
     services: "-"
   },
