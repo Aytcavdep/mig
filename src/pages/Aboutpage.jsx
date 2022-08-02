@@ -1,17 +1,13 @@
 import React from "react";
-import  Requisites  from "./Requisites";
-
-
-
-
+import Requisites from "../components/Requisites";
 
 const Aboutpage = () => {
-  return  (<div>
-  <div>Раздел обновится в ближайшее время</div>
-
-  <Requisites/>
-  </div>
-  )
+  return (
+    <div>
+      <div>Раздел находится в процессе оформления, а пока вы можете скачать наши реквизиты</div>
+      <Requisites />
+    </div>
+  );
 };
 
 export default Aboutpage;
