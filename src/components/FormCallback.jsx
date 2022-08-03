@@ -2,7 +2,7 @@ import { Button, Form, Input, Modal, Checkbox, Upload } from "antd";
 import React, { useState } from "react";
 import { UploadOutlined } from "@ant-design/icons";
 //import FormData from "form-data";
-import axios from 'axios';
+import axios from "axios";
 
 const CollectionCreateForm = ({ visible, onCreate, onCancel }) => {
   const [form] = Form.useForm();
@@ -100,7 +100,7 @@ const CollectionCreateForm = ({ visible, onCreate, onCancel }) => {
           getValueFromEvent={normFile}
           extra="longgggggggggggggggggggggggggggggggggg"
         >
-          <Upload name="file"   action="Send_form.php"   listType="file">
+          <Upload name="file" action="Send_form.php" listType="file">
             <Button icon={<UploadOutlined />}>Click to upload</Button>
           </Upload>
         </Form.Item>
@@ -127,22 +127,30 @@ const FormCallback = () => {
 
   const onCreate = (values) => {
     console.log("Received values of form: ", values);
-    uploadData(values)
+    uploadData(values);
     setVisible(false);
   };
-  const FormData = require('form-data');
+  const FormData = require("form-data");
   const uploadData = (values) => {
-    let fd = new FormData();
-for (const file of values.upload) { // images is an array of File Object
+    axios
+      .post("Send_form.php", values, {
+        headers: {
+          "Content-Type": "multipart/form-data"
+        }
+      })
+      .then(({ data }) => console.log(data));
+    /* let fd = new FormData();
+/*for (const file of values.upload) { // images is an array of File Object
   fd.append('file', file, file.name); // multiple upload
-}
-async function responce(){ await axios.post(
+}*/
+
+    /*async function responce(){ await axios.post(
   "Send_form.php", fd,
   { headers: fd.getHeaders() }
 );
 console.log(responce);
-}
-  }
+}*/
+  };
 
   return (
     <div>
