@@ -3,10 +3,10 @@ import FormCallback from "../components/FormCallback";
 
 const Contacts = () => {
   return (
-    <>
+    <div>
       <div>Добавим контакты в ближайшее время</div>
-      {/*<FormCallback />*/}
-    </>
+      {/* <FormCallback /> */}
+    </div>
   );
 };
 

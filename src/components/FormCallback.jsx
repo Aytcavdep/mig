@@ -1,6 +1,8 @@
 import { Button, Form, Input, Modal, Checkbox, Upload } from "antd";
 import React, { useState } from "react";
 import { UploadOutlined } from "@ant-design/icons";
+//import FormData from "form-data";
+import axios from 'axios';
 
 const CollectionCreateForm = ({ visible, onCreate, onCancel }) => {
   const [form] = Form.useForm();
@@ -88,7 +90,7 @@ const CollectionCreateForm = ({ visible, onCreate, onCancel }) => {
             }}
           />
         </Form.Item>
-        <Form.Item name="description" label="Описание вопроса">
+        <Form.Item name="message" label="Описание вопроса">
           <Input type="textarea" disabled={componentDisabled} />
         </Form.Item>
         <Form.Item
@@ -98,7 +100,7 @@ const CollectionCreateForm = ({ visible, onCreate, onCancel }) => {
           getValueFromEvent={normFile}
           extra="longgggggggggggggggggggggggggggggggggg"
         >
-          <Upload name="logo" action="/upload.do" listType="picture">
+          <Upload name="file"   action="Send_form.php"   listType="file">
             <Button icon={<UploadOutlined />}>Click to upload</Button>
           </Upload>
         </Form.Item>
@@ -125,8 +127,22 @@ const FormCallback = () => {
 
   const onCreate = (values) => {
     console.log("Received values of form: ", values);
+    uploadData(values)
     setVisible(false);
   };
+  const FormData = require('form-data');
+  const uploadData = (values) => {
+    let fd = new FormData();
+for (const file of values.upload) { // images is an array of File Object
+  fd.append('file', file, file.name); // multiple upload
+}
+async function responce(){ await axios.post(
+  "Send_form.php", fd,
+  { headers: fd.getHeaders() }
+);
+console.log(responce);
+}
+  }
 
   return (
     <div>
