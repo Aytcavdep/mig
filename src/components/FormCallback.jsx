@@ -100,7 +100,7 @@ const CollectionCreateForm = ({ visible, onCreate, onCancel }) => {
           getValueFromEvent={normFile}
           extra="longgggggggggggggggggggggggggggggggggg"
         >
-          <Upload name="file" action="Send_form.php" listType="file">
+          <Upload name="file" /*action="Send_form.php"*/ listType="file">
             <Button icon={<UploadOutlined />}>Click to upload</Button>
           </Upload>
         </Form.Item>
@@ -133,7 +133,7 @@ const FormCallback = () => {
   const FormData = require("form-data");
   const uploadData = (values) => {
     axios
-      .post("Send_form.php", values, {
+      .post("mail.php", values, {
         headers: {
           "Content-Type": "multipart/form-data"
         }
