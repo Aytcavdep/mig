@@ -3,14 +3,10 @@
     display: grid;
 }
 
-.table-head,
-.table-footer {
+.table-head {
     justify-self: center;
     font-size: 1.2em;
     font-weight: bold;
-}
-.table-footer {
-    justify-self: left;
 }
 
 table {
