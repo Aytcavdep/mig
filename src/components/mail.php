@@ -12,15 +12,15 @@ $email = $_POST['email'];
 //$mail->SMTPDebug = 3;                               // Enable verbose debug output
 
 $mail->isSMTP();                                      // Set mailer to use SMTP
-$mail->Host = '****';  																							// Specify main and backup SMTP servers
+$mail->Host = 'mail.migbelg.ru';  																							// Specify main and backup SMTP servers
 $mail->SMTPAuth = true;                               // Enable SMTP authentication
-$mail->Username = '****'; // Ваш логин от почты с которой будут отправляться письма
-$mail->Password = '***'; // Ваш пароль от почты с которой будут отправляться письма
+$mail->Username = 'office@migbelg.ru'; // Ваш логин от почты с которой будут отправляться письма
+$mail->Password = '*********'; // Ваш пароль от почты с которой будут отправляться письма
 $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
 $mail->Port = 587; // TCP port to connect to / этот порт может отличаться у других провайдеров
 
-$mail->setFrom('*****'); // от кого будет уходить письмо?
-$mail->addAddress('****');     // Кому будет уходить письмо 
+$mail->setFrom('office@migbelg.ru'); // от кого будет уходить письмо?
+$mail->addAddress('admin@migbelg.ru');     // Кому будет уходить письмо 
 //$mail->addAddress('ellen@example.com');               // Name is optional
 //$mail->addReplyTo('info@example.com', 'Information');
 //$mail->addCC('cc@example.com');
