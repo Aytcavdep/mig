@@ -1,4 +1,4 @@
-import { NavLink, Outlet } from "react-router-dom";
+import { NavLink, Outlet, Link } from "react-router-dom";
 import {
   ContactsTwoTone,
   HomeTwoTone,
@@ -40,6 +40,9 @@ const Layout = () => {
             <a title="Viber" href="viber://chat?number=%2B79102274758">
               <img src={require("./img/viber.png")} alt="Viber" />
             </a>
+            <Link to="/contacts" title="Отправить сообщение">
+              <img src={require("./img/Letter.png")} alt="Letter" />
+            </Link>
             {/* <a title="Telegram" href="tg://resolve?domain=santech31"><img src="img/telegram.png" alt="Telegram"></a> */}
             {/* <a title="instagram" href="http://instagram.com/_u/santech31/"><img src="img/instagram.png" alt="instagram"></a>
     <a title="Vk" href="http://vk.com/santech31/"><img src="img/vk.png" alt="vkontakte"></a> */}
