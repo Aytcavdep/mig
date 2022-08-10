@@ -17,13 +17,16 @@ const CollectionCreateForm = ({ visible, onCreate, onCancel }) => {
       if (document.getElementById("phone").value.length < 6) {
         setIsValidateErrorPhone(true);
       }
-      if (!isValidateErrorName & !isValidateErrorPhone) {
+      if (
+        !(document.getElementById("name").value.length < 3) &&
+        !(document.getElementById("phone").value.length < 6)
+      ) {
         onCreate();
       }
     } else {
       Modal.error({
         title: "Ошибка отправки формы",
-        content: "Подтвердите согласие на обработку персональных данных"
+        content: "Подтвердите согласие на обработку персональных данных",
       });
     }
   };
@@ -149,23 +152,23 @@ const FormCallback = () => {
   const uploadData = () => {
     let fd = new FormData(myForm);
     axios
-      .post("https://migbelg.store/mail.php", fd, {
+      .post("https://migbelg.ru/MailSend/mail.php", fd, {
         headers: {
-          "Content-Type": "multipart/form-data"
-        }
+          "Content-Type": "multipart/form-data",
+        },
       })
       .then(({ data }) => {
-        if (data === "send") {
+        if (String(data) == "send\r\n\r\n") {
           Modal.success({
             title: "Форма отправлена",
-            content: "Форма отправлена успешно, спасибо за обращение"
+            content: "Форма отправлена успешно, спасибо за обращение",
           });
         }
-        if (data === "error") {
+        if (String(data) == "error\r\n\r\n") {
           Modal.error({
             title: "Ошибка отправки формы",
             content:
-              "Ошибка сети, повторите позднее или используйте другие виды связи"
+              "Ошибка сети, повторите позднее или используйте другие виды связи",
           });
         }
       });
