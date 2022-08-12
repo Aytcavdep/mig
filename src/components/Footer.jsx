@@ -18,7 +18,7 @@ const Footer = () => {
         <div className="footer-address">
           <a
             className="address"
-            href="https://yandex.ru/maps/-/CCUNvHDjDD"
+            href="https://yandex.ru/map-widget/v1/-/CCURNBvqcD"
             title="Перейти на карту"
           >
             <EnvironmentTwoTone />

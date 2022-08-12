@@ -1,5 +1,5 @@
 import { Button, Modal, Checkbox, Input, Form } from "antd";
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import axios from "axios";
 import "./FormCallback.css";
 
@@ -8,6 +8,9 @@ const CollectionCreateForm = ({ visible, onCreate, onCancel }) => {
   const [componentDisabled, setComponentDisabled] = useState(true);
   const [isValidateErrorName, setIsValidateErrorName] = useState(false);
   const [isValidateErrorPhone, setIsValidateErrorPhone] = useState(false);
+  const [selectedFile, setSelectedFile] = useState(null)
+const filePicker = useRef(null);
+//const my_Form = useRef(null);
   const { TextArea } = Input;
   const onOk = () => {
     if (componentDisabled) {
@@ -31,6 +34,16 @@ const CollectionCreateForm = ({ visible, onCreate, onCancel }) => {
     }
   };
 
+  const handlePick = () => {
+    filePicker.current.click();
+  }
+
+  
+
+  const handleChange = (event) => { 
+setSelectedFile(event.target.files[0])
+   }
+
   return (
     <Modal
       visible={visible}
@@ -45,6 +58,7 @@ const CollectionCreateForm = ({ visible, onCreate, onCancel }) => {
         action="https://migbelg.ru/MailSend/mail.php"
         method="POST"
         enctype="multipart/form-data"
+        //ref={my_Form}
       >
         <div
           className={
@@ -122,8 +136,22 @@ const CollectionCreateForm = ({ visible, onCreate, onCancel }) => {
         <div
           className={componentDisabled ? "form-group" : "form-group disabled"}
         >
-          <label for=""></label>
-          <input type="file" id="file" name="upload" />
+          <Button
+          disabled={!componentDisabled}
+           onClick={handlePick}>Загрузить файл</Button>
+          <input
+          className="hidden"
+          ref={filePicker}
+          onChange={handleChange}
+           type="file" id="file" name="upload" />
+           {selectedFile && (
+            <ul>
+              <li>Имя: {selectedFile.name}</li>
+              <li>Тип: {selectedFile.type}</li>
+              <li>Размер: {selectedFile.size}</li>
+              <li>Дата последнего изменения: {" "}{selectedFile.lastModifiedDate.toLocaleDateString()}</li>
+            </ul>
+           )}
         </div>
 
         <Checkbox
@@ -144,7 +172,8 @@ const FormCallback = () => {
   let myForm;
   const onCreate = () => {
     myForm = document.getElementById("my-form");
-    uploadData();
+   uploadData();
+   //console.log(my_Form);
     setVisible(false);
   };
   const FormData = require("form-data");

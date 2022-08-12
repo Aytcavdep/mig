@@ -7,20 +7,19 @@ import "./Homepage.css";
 const data = [
   {
     title: "Токарные работы ЧПУ",
-    description:
-      "max диаметр 500 РМЦ 1500",
-    img: require("./services/img/lathe.png")
+    description: "max диаметр 500 РМЦ 1500",
+    img: require("./services/img/lathe.png"),
   },
   {
     title: "Фрезерные работы с ЧПУ",
     description: "max 430 мм х 350 мм",
-    img: require("./services/img/lathe.png")
+    img: require("./services/img/lathe.png"),
   },
   {
     title: "Шлифовальные работы",
     description: "габариты рабочего поля 300 мм х 800 мм",
-    img: require("./services/img/lathe.png")
-  }
+    img: require("./services/img/lathe.png"),
+  },
 ];
 
 const dataDetail = [
@@ -40,7 +39,7 @@ const dataDetail = [
   " Корпуса",
   " Отводы",
   " Анкера",
-  " Стаканы"
+  " Стаканы",
 ];
 
 const Homepage = () => {
@@ -96,7 +95,7 @@ const Homepage = () => {
         </p>
         <iframe
           title="Яндекс карта с маршрутом"
-          src="https://yandex.ru/map-widget/v1/-/CCUNvHDnoD"
+          src="https://yandex.ru/map-widget/v1/-/CCURNBvqcD"
           height="350"
           width="100%"
           frameBorder="0"
