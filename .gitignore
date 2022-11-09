@@ -11,6 +11,7 @@
 # production
 /build
 /new
+/sender
 
 # misc
 .DS_Store

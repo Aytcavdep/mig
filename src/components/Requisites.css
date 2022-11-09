@@ -1,27 +1,30 @@
 .container {
-    font-size: var(--h2-font-size);
-    display: grid;
+  font-size: var(--h2-font-size);
+  display: grid;
 }
 
 .table-head,
 .table-footer {
-    justify-self: center;
-    font-size: 1.2em;
-    font-weight: bold;
+  justify-self: center;
+  font-size: 1.2em;
+  font-weight: bold;
 }
 .table-footer {
-    justify-self: left;
+  justify-self: left;
 }
 
 table {
-    width: auto;
-    border: 1px solid rgb(230, 230, 230);
+  width: auto;
+  border: 1px solid rgb(230, 230, 230);
 }
 
-th {
-    border: 1px solid rgb(230, 230, 230);
- }
- /* границы ячеек тела таблицы */
- td {
-    border: 1px solid rgb(230, 230, 230);
- }
+th,
+td {
+  border: 1px solid rgb(230, 230, 230);
+  vertical-align: middle;
+}
+
+.ant-typography {
+  vertical-align: middle;
+  margin: 0.5rem !important;
+}
