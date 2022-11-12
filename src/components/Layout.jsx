@@ -1,17 +1,17 @@
-import { NavLink, Outlet, Link } from "react-router-dom";
+import { NavLink, Outlet, Link } from 'react-router-dom';
 import {
   ContactsTwoTone,
   HomeTwoTone,
   FlagTwoTone,
   ToolTwoTone,
-  PhoneOutlined
-} from "@ant-design/icons";
-import React from "react";
-import Footer from "./Footer";
-import "./Layout.css";
-import CarouselImg from "./Carousel";
+  PhoneOutlined,
+} from '@ant-design/icons';
+import React from 'react';
+import Footer from './Footer';
+import './Layout.css';
+import CarouselImg from './Carousel';
 
-const setActive = ({ isActive }) => (isActive ? "active-nav" : "nav");
+const setActive = ({ isActive }) => (isActive ? 'active-nav' : 'nav');
 
 const Layout = () => {
   return (
@@ -30,18 +30,18 @@ const Layout = () => {
           <div className="messager">
             <a
               title="Отправить Email"
-              href="mailto:admin@migbelg.ru?subject=Расчёт изготовления детали(from:migbelg.ru)"
+              href="mailto:office@migbelg.ru?subject=Расчёт изготовления детали(from:migbelg.ru)"
             >
-              <img src={require("./img/email.webp")} alt="Email" />
+              <img src={require('./img/email.webp')} alt="Email" />
             </a>
             <a title="WhatsApp" href="whatsapp://send?phone=+79102274758">
-              <img src={require("./img/whatsapp.png")} alt="WhatsApp" />
+              <img src={require('./img/whatsapp.png')} alt="WhatsApp" />
             </a>
             <a title="Viber" href="viber://chat?number=%2B79102274758">
-              <img src={require("./img/viber.png")} alt="Viber" />
+              <img src={require('./img/viber.png')} alt="Viber" />
             </a>
             <Link to="/contacts" title="Отправить сообщение">
-              <img src={require("./img/Letter.png")} alt="Letter" />
+              <img src={require('./img/Letter.png')} alt="Letter" />
             </Link>
             {/* <a title="Telegram" href="tg://resolve?domain=santech31"><img src="img/telegram.png" alt="Telegram"></a> */}
             {/* <a title="instagram" href="http://instagram.com/_u/santech31/"><img src="img/instagram.png" alt="instagram"></a>
